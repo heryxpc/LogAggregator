@@ -1,0 +1,12 @@
+<configuration>
+    <appender name="STDERR" class="ch.qos.logback.core.ConsoleAppender">
+        <target>System.err</target>
+    </appender>
+    <root level="INFO">
+        <appender-ref ref="STDERR" />
+    </root>
+    <logger name="io.heryxpc.logaggregator" level="DEBUG">
+        <appender-ref ref="STDERR"/>
+    </logger>
+</configuration>
+
